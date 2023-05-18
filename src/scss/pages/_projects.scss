@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.projects {
+    text-align: center;
+
+    h3 {
+        margin: 16px 0;
+    }
+
+    .project1Row,
+    .project2Row {
+        text-align: center;
+        margin: 0 32px 32px 32px;
+    }
+
+    .project1Row {
+        .projectImg {
+            height: 300px;
+            background-image: url("./img/SCcoin.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .project2Row {
+        .projectImg {
+            height: 300px;
+            background-image: url("./img/WhiteLineFever.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

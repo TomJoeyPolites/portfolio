@@ -1,0 +1,45 @@
+@use "./variables" as *;
+
+@keyframes scrollHeading {
+
+    from {
+        transform: $transX0p;
+    }
+
+    25% {
+        transform: $transMinusX50p;
+    }
+
+    50% {
+        color: $priFont;
+        transform: $transMinusX100p;
+    }
+
+    50.40% {
+        color: $secBackGround;
+        transform: $transMinusX100p;
+    }
+
+    50.44% {
+        color: $secBackGround;
+        transform: $transMinusX100p;
+    }
+
+    50.45% {
+        color: $secBackGround;
+        transform: $transPosX100p;
+    }
+
+    50.5% {
+        color: $priFont;
+        transform: $transPosX100p;
+    }
+
+    75% {
+        transform: $transPosX50p;
+    }
+
+    to {
+        transform: $transX0p;
+    }
+}

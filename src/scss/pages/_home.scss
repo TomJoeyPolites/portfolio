@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.contentRow {
+    margin-bottom: 36px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .infoRow {
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

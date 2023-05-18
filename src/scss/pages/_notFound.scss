@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.notFound {
+    justify-content: center;
+    text-align: center;
+
+    .row {
+        margin: 32px 0;
+    }
+}

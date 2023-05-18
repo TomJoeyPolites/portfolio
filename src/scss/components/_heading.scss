@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+
+.headingRow {
+    height: 30vh;
+    align-items: center;
+    text-align: center;
+
+    .headingScroll {
+        margin: 0 0 1rem 0;
+        height: fit-content;
+        overflow: hidden;
+
+        h1 {
+            font-size: $mainTitleSize;
+            /*? CREATES NO BREAKS IN LINE */
+            white-space: nowrap;
+            //?  
+            animation: scrollHeading 16s linear infinite;
+        }
+    }
+
+}

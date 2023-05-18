@@ -1,0 +1,24 @@
+//! Table of Contents
+
+//!base
+//!layouts
+//!components
+//!pages
+
+//* Base imports 
+@use"./base/base";
+
+//*Layout imports
+@use"./layouts/navigation";
+@use"./layouts/footer";
+
+//*Components imports
+@use"./components/heading";
+@use"./components/infoCard";
+@use"./components/profile";
+
+//*Pages imports
+@use"./pages/home";
+@use"./pages/about";
+@use"./pages/projects";
+@use"./pages/notFound";

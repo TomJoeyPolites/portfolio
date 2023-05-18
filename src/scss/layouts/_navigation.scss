@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.navigationRow {
+    padding-top: 17px;
+    margin-bottom: 32px;
+
+    .navbar {
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        a {
+            margin-left: 29px;
+            font-size: $navBrandSize;
+            color: $priFont;
+        }
+
+        svg {
+            color: #ffff00;
+        }
+    }
+
+    .navbar-nav {
+        font-size: $navLinkSize;
+
+        a {
+            padding: 0 10px;
+        }
+
+        a.active {
+            color: #ffff00;
+        }
+    }
+}

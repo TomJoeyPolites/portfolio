@@ -1,0 +1,52 @@
+@use "../abstracts/" as *;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Concert One', cursive;
+    font-family: 'Merriweather', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $priFont;
+    background-color: $secBackGround;
+    line-height: 30px;
+    font-size: $textSize;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    font-size: $subHeadingSize;
+}
+
+
+a {
+    color: $priFont;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffff00;
+}
+
+.app {
+    height: 90vh;
+}
+
+.background {
+    margin: 32px 32px;
+    @include backgroundGrid;
+}
+
+.container {
+    align-items: center;
+}

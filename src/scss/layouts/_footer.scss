@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+
+.linkRow {
+    text-align: center;
+    align-items: center;
+
+    a {
+        padding: 0 48px;
+    }
+}

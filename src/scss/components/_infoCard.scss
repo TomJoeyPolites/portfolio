@@ -1,0 +1,21 @@
+//! Also AccordionInfo
+
+@use "../abstracts" as *;
+
+.infoCard {
+    padding: 1rem 0;
+
+    .accordion {
+        background-color: none;
+
+    }
+
+    .iconButton {
+        color: $priFont;
+        border: none;
+    }
+
+    .iconButton:hover {
+        color: #ffff00;
+    }
+}

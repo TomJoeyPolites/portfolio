@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather:wght@300&display=swap");
+@keyframes scrollHeading {
+  from {
+    transform: translateX(0vw);
+  }
+  25% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    color: #FFFFFF;
+    transform: translateX(-200vw);
+  }
+  50.40% {
+    color: #007CF8;
+    transform: translateX(-200vw);
+  }
+  50.44% {
+    color: #007CF8;
+    transform: translateX(-200vw);
+  }
+  50.45% {
+    color: #007CF8;
+    transform: translateX(200vw);
+  }
+  50.5% {
+    color: #FFFFFF;
+    transform: translateX(200vw);
+  }
+  75% {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+body {
+  margin: 0;
+  font-family: "Concert One", cursive;
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+  background-color: #007CF8;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffff00;
+}
+
+.app {
+  height: 90vh;
+}
+
+.background {
+  margin: 32px 32px;
+  border: 2px solid #DDDDDD;
+  background-color: #007CF8;
+  background-size: 15px 15px;
+  background-image: linear-gradient(to right, #AAAAAA 0.7px, transparent 0.5px), linear-gradient(to bottom, #AAAAAA 0.6px, transparent 0.5px);
+}
+
+.container {
+  align-items: center;
+}
+
+.navigationRow {
+  padding-top: 17px;
+  margin-bottom: 32px;
+}
+.navigationRow .navbar {
+  padding: 0;
+  justify-content: space-between;
+}
+.navigationRow .navbar-brand a {
+  margin-left: 29px;
+  font-size: 60px;
+  color: #FFFFFF;
+}
+.navigationRow .navbar-brand svg {
+  color: #ffff00;
+}
+.navigationRow .navbar-nav {
+  font-size: 45px;
+}
+.navigationRow .navbar-nav a {
+  padding: 0 10px;
+}
+.navigationRow .navbar-nav a.active {
+  color: #ffff00;
+}
+
+.linkRow {
+  text-align: center;
+  align-items: center;
+}
+.linkRow a {
+  padding: 0 48px;
+}
+
+.headingRow {
+  height: 30vh;
+  align-items: center;
+  text-align: center;
+}
+.headingRow .headingScroll {
+  margin: 0 0 1rem 0;
+  height: fit-content;
+  overflow: hidden;
+}
+.headingRow .headingScroll h1 {
+  font-size: 165px;
+  /*? CREATES NO BREAKS IN LINE */
+  white-space: nowrap;
+  animation: scrollHeading 16s linear infinite;
+}
+
+.infoCard {
+  padding: 1rem 0;
+}
+.infoCard .accordion {
+  background-color: none;
+}
+.infoCard .iconButton {
+  color: #FFFFFF;
+  border: none;
+}
+.infoCard .iconButton:hover {
+  color: #ffff00;
+}
+
+.profile {
+  display: inline-block;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home .profile {
+  height: 450px;
+  background-image: url("./img/profileLeft.jpg");
+}
+
+#about .profile {
+  height: 450px;
+  background-image: url("./img/profileRight.jpg");
+}
+
+.contentRow {
+  margin-bottom: 36px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contentRow .infoRow {
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutTitleRow {
+  height: 65px;
+}
+
+.aboutContentRow {
+  margin-bottom: 64px;
+  align-items: center;
+  text-align: center;
+}
+.aboutContentRow .aboutInfoRow {
+  height: 50vh;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.aboutContentRow .aboutInfoRow > .col {
+  height: 25vh;
+  padding-top: 1rem;
+}
+
+.projects {
+  text-align: center;
+}
+.projects h3 {
+  margin: 16px 0;
+}
+.projects .project1Row,
+.projects .project2Row {
+  text-align: center;
+  margin: 0 32px 32px 32px;
+}
+.projects .project1Row .projectImg {
+  height: 300px;
+  background-image: url("./img/SCcoin.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.projects .project2Row .projectImg {
+  height: 300px;
+  background-image: url("./img/WhiteLineFever.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.notFound {
+  justify-content: center;
+  text-align: center;
+}
+.notFound .row {
+  margin: 32px 0;
+}

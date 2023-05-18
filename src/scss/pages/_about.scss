@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+.aboutTitleRow {
+    height: 65px;
+}
+
+.aboutContentRow {
+    margin-bottom: 64px;
+    align-items: center;
+    text-align: center;
+
+    .aboutInfoRow {
+        height: 50vh;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .aboutInfoRow>.col {
+        height: 25vh;
+        padding-top: 1rem;
+    }
+}
